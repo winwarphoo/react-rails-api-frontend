@@ -7,9 +7,7 @@ const PostList = (props) => {
     return(
       <Grid item xs={4} key={post.id}>
         <Post
-          title={post.title}
-          content={post.content}
-          id={post.id}
+          post={post}
           onDelete={props.onDelete}
         />
       </Grid>
